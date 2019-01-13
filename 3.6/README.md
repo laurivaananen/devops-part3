@@ -1,12 +1,7 @@
-# Docker
+# b) Docker
 
-Docker allows you to package not only your application but all of its dependencies, libraries and configurations.
+One of the most common problems programmers face is that their development and production environments are different. This might cause the application to run differently on different computers. Docker allows you to package not only your application but all of its dependencies, libraries and configurations. Using Docker you can be sure that the application runs the same on all platforms. Because Docker containers can also save your data that you generate migrating your application to a new server becomes very simple.
 
-## Why use Docker?
+Docker containers are lightweight and can be started up or shut down quickly matching your applications needs making scaling your application very easy. Docker containers are also very useful when developing applications. Containers allow you to set up a very specific evironment with operating system, specific versions of software, environment variables, exposed ports and more. Making a new Docker container for every new project allows you to avoid common problems like getting conflicts from having multiple versions of the same software installed.
 
-Docker solves many of the problems programmers are facing.
-
-* Application works differently on different computers
-* Development and production environments are different which might cause problems
-* Running multiple applications at the same time 
-* Moving an application, its data and the environment in which it's running to a different machine is difficult to do without manual configuring
+Docker compose allows you to run applications that consist of multiple containers. You can share traffic between the containers throught exposed ports or you can open a port to outside of the container. You can bind directories and files to volumes which you can share with other containers or the host system. A common pattern in web development is having three containers of a reverse proxy, web application and a database which you can orchestrate using Docker compose.
